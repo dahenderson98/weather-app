@@ -1,0 +1,74 @@
+body {
+  background-color: #f2f2f2;
+}
+
+#top-label {
+  margin: 20px 20px 0 20px;
+}
+
+#current-weather-header {
+  overflow: hidden;
+}
+
+#weatherResults {
+  margin-top: 20px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+#current-weather-card {
+  width: 99%
+}
+
+#forecast-section-header {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.forecast-container {
+  width:100%;
+  height: auto;
+  margin-bottom: 65px;
+  overflow: hidden;
+}
+
+#forecastResults {
+  width: 100%;
+}
+
+/* #forecast-item {
+  margin-top: 20px;
+  margin-left: 20px;
+  float: center;
+} */
+
+/* Display forecast items in a single column on devices smaller than 768px */
+@media (max-width: 768px) {
+  #current-weather-column {
+    float: left;
+    margin-right: 30px;
+  }
+
+  #forecast-item {
+    margin-top: 20px;
+    margin-left: 5px;
+    float: center;
+  }
+}
+
+/* Display forecast items in rows of 4 on screens wider than 768px */
+@media (min-width: 769px) {
+  #current-weather-column {
+    float: left;
+    padding-left: 60px;
+    width: 30%;
+    /* margin-right: 30px; */
+  }
+
+  #forecast-item {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 23.29%;
+    float: left;
+  }
+}
