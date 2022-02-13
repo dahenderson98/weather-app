@@ -44,7 +44,8 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
       results += "<div id=\"current-weather-column\" style=\"padding-top: 15px;\">";
       results += "<h4 style=\"float: center;\">Wind</h4>";
       results += "<p style=\"float: center; margin-top: 5px;\">Direction: " + json.wind.deg + " &deg;</p>";
-      results += "<p style=\"float: center;\">Speed: " + json.wind.speed + " MPH</p>";
+      let speed = json.wind.speed;
+      results += "<p style=\"float: center;\">Speed: " + speed.toFixed(0) + " MPH</p>";
       //Close third current weather column element
       results += "</div>";
 
