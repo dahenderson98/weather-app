@@ -6,7 +6,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
   console.log(value);
 
   //Get current weather data
-  const url = "http://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=9477254a050cba1453f1cfaa8e785253";
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=9477254a050cba1453f1cfaa8e785253";
   fetch(url)
     .then(function(response) {
       return response.json();
@@ -56,7 +56,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
     .catch(error => alert(error.message));
 
   //Get forecast data
-  const url2 = "http://api.openweathermap.org/data/2.5/forecast?q=" + value + ", US&units=imperial" + "&APPID=9477254a050cba1453f1cfaa8e785253";
+  const url2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + value + ", US&units=imperial" + "&APPID=9477254a050cba1453f1cfaa8e785253";
   fetch(url2)
     .then(function(response) {
       return response.json();
